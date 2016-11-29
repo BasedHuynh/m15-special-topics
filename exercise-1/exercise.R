@@ -10,11 +10,11 @@ library(modelr)
 library(tidyverse)
 
 # Initial view of the data with ggplot
-
+View(gapminder)
 
 # Look only at new zealand
-
-
+nz <- gapminder %>% filter(country == 'New Zealand')
+View(nz)
 
 # Better yet, write your own function to accept a country as a parameter,
 # and produce the same graphics
